@@ -36,9 +36,92 @@ header {
 }
 
 .wrapper {
-    width: 1280px;
-    max-width: 95%;
-    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(255, 153, 0, 0.76) 0%, rgb(99, 68, 10) 70%, rgba(2,0,.6,1) 100%); 
+    z-index: -2;
+}
+
+.box div{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 6px solid rgba(31, 15, 15, 0.788);
+    z-index: -1;
+}
+
+.box div:nth-child(1){
+    top: 12%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(2){
+    top: 70%;
+    left: 50%;
+    animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(3){
+    top: 17%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(4){
+    top: 20%;
+    left: 60%;
+    animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(5){
+    top: 67%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+}
+
+.box div:nth-child(6){
+    top: 80%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+}
+
+.box div:nth-child(7){
+    top: 60%;
+    left: 80%;
+    animation: animate 15s linear infinite;
+}
+
+.box div:nth-child(8){
+    top: 32%;
+    left: 25%;
+    animation: animate 16s linear infinite;
+}
+
+.box div:nth-child(9){
+    top: 90%;
+    left: 25%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(10){
+    top: 20%;
+    left: 80%;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.2) translateY(-90px) rotate(360deg);
+        opacity: 1; 
+    }
 }
 
 nav .togglebtn {
@@ -143,7 +226,7 @@ nav .navlinks li a {
 }
 
 .about-me {
-    background: #333;
+    background: #171616;
     padding: 2rem 0;
 }
 .about-me h2 {
@@ -162,7 +245,7 @@ nav .navlinks li a {
 }
 
 .experience {
-    background: #444;
+    background: #2b2b2b;
     padding: 2rem 0;
 }
 .experience h2 {
@@ -205,7 +288,7 @@ nav .navlinks li a {
 }
 
 .education {
-    background: #333;
+    background: #171616;
     padding: 2rem 0;
 }
 .education h2 {
@@ -248,7 +331,7 @@ nav .navlinks li a {
 }
 
 .skills {
-    background: #444;
+    background: #2b2b2b;
     padding: 2rem 0;
 }
 .skills h2 {
@@ -327,7 +410,7 @@ nav .navlinks li a {
 }
 
 .projects {
-    background: #333;
+    background: #171616;
     padding: 2rem 0;
 }
 .projects h2 {
@@ -336,22 +419,50 @@ nav .navlinks li a {
     margin-bottom: 1.5rem;
     text-align: center;
 }
-.projects-items {
+.project-items {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
     flex-wrap: wrap;
+    gap: 1.5rem;
+    max-width: 1400px; 
+    margin: 0 auto;
 }
+
 .project-item {
     position: relative;
-    width: 350px;
+    flex: 1 1 calc(25% - 1.5rem); 
+    max-width: calc(25% - 1.5rem);
+    width: 100%;
     height: 220px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    margin: 1.5rem;
+    margin: 0;
     transition: transform 0.3s ease;
 }
+
+
+@media (max-width: 1024px) {
+    .project-item {
+        flex: 1 1 calc(33.33% - 1.5rem);
+        max-width: calc(33.33% - 1.5rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .project-item {
+        flex: 1 1 calc(50% - 1.5rem); 
+        max-width: calc(50% - 1.5rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .project-item {
+        flex: 1 1 100%; 
+        max-width: 100%;
+    }
+}
+
 .project-item img {
     width: 100%;
     height: 100%;
@@ -367,25 +478,33 @@ nav .navlinks li a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.464);
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease;
+    z-index: 2; 
 }
+
 .project-item:hover .project-overlay {
     opacity: 1;
 }
+
 .project-name {
     color: #fff;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+    z-index: 3;
+    position: relative;
 }
 
 .contact {
-    background: #444;
+    background: #2b2b2b;
     color: #e5e5e5;
     padding: 2rem 0;
     text-align: center;
