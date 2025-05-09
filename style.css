@@ -14,6 +14,7 @@ html {
 body {
     margin: 0;
     padding-top: 80px;
+    width: 100%;
     font-family: poppins, sans-serif;
     background: linear-gradient(
     90deg,
@@ -153,7 +154,7 @@ body {
 
 .main-page {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
     padding-top: 25px;
 }
@@ -679,4 +680,315 @@ body {
     .skills {
         padding-top: 45px;
     }
+
+    .skills-items {
+        margin-left: 250px;
+        margin-right: 250px; 
+    }
 }
+
+@media screen and (max-width: 1300px) {
+    .main-page-content {
+        gap: 110px;
+    }
+
+    .skills {
+        height: auto;
+        padding-bottom: 55px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .main-page-content {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .navlinks {
+        gap: 11px;
+    }
+
+    .navlinks a {
+        font-size: 1.1rem;
+        padding: 10px 10px;
+    }
+    
+    .main-page {
+        padding-top: 80px;
+    }
+
+    .main-page-content {
+        gap: 50px;
+    }
+    
+    .photo-border {
+        width: 400px;
+        height: 400px;
+        padding: 10px;
+    }
+    
+    .main-page-content .my-photo {
+        width: 380px;
+        height: 380px;
+    }
+    
+    .main-text-box {
+        width: 350px;
+        height: 260px;
+        padding: 25px;
+    }   
+    
+    .main-text h5 {
+        font-size: 15px;
+    }
+    
+    .main-text h1 {
+        font-size: 47px;
+        /*font-size: clamp(20px, 5vw, 47px);*/
+    }
+    
+    .main-text p {
+        font-size: 15.5px;
+    }
+    
+    .input {
+        font-size: 16px;
+    }
+    
+    .resume-social-row {
+        gap: 12px; 
+    }
+    
+    .btn-resume-div {
+        margin: 27px 0;
+    }
+    
+    .btn-resume-div .btn-resume {
+        border: 1px solid #e5e5e5;
+        padding: 9px 20px;
+    }
+    
+    .btn-resume:hover {
+        border: 1px solid #717171;
+    }
+    
+    .main-text .social i {
+        font-size: 18px;
+    }
+
+    .skills-items {
+        margin-left: 210px;
+        margin-right: 210px; 
+    }
+}
+
+@media (max-width: 900px) {
+    .about-me h2 {
+        font-size: 2.4rem;
+    }
+    
+    .about-me p {
+        font-size: 1rem;
+        padding: 0 30px;
+    }    
+    
+    .experience-item {
+        padding: 1.2rem;
+        width: 300px;
+        height: 220px;
+    }
+
+    .experience h2 {
+        font-size: 2.4rem;
+    }
+    
+    .experience-item h3 {
+        font-size: 1.4rem;
+    }
+    
+    .experience-item p {
+        font-size: 0.87rem;
+    }
+    
+    .experience-item ul {
+        font-size: 0.83rem;
+    }
+
+    .education h2 {
+        font-size: 2.4rem;
+    }
+    
+    .education-items {
+        gap: 1.2rem;
+    }
+    
+    .education-item {
+        padding: 1.2rem;
+        width: 300px;
+        height: 220px;
+    }
+    
+    .education-item h3 {
+        font-size: 1.4rem;
+    }
+    
+    .education-item p {
+        font-size: 0.87rem;
+    }
+    
+    .education-item ul {
+        font-size: 0.83rem;
+    }
+
+    .skills h2,
+    .projects h2,
+    .contact h2 {
+        font-size: 2.4rem;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .navlinks {
+        gap: 2px;
+    }
+
+    .navlinks a {
+        font-size: 0.9rem;
+        padding: 10px 4px;
+    }
+    
+    .main-page {
+        padding-top: 60px;
+    }
+
+    .main-page-content {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .photo-border {
+        width: 280px;
+        height: 280px;
+        padding: 8px;
+    }
+
+    .main-page-content .my-photo {
+        width: 264px;
+        height: 264px;
+    }
+
+    .main-text-box {
+        width: 270px;
+        height: 230px;
+        padding: 20px;
+    }
+
+    .main-text h5 {
+        font-size: 13px;
+    }
+
+    .main-text h1 {
+        font-size: 34px;
+    }
+
+    .main-text p {
+        font-size: 15px;
+    }
+
+    .input {
+        font-size: 15px;
+    }
+
+    .resume-social-row {
+        gap: 10px;
+    }
+
+    .btn-resume-div {
+        margin: 20px 0;
+    }
+
+    .btn-resume-div .btn-resume {
+        padding: 8px 18px;
+    }
+
+    .main-text .social i {
+        font-size: 16px;
+    }
+
+    .skills-items {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .project-item {
+        flex: 1 1 calc(50% - 1.5rem); 
+        max-width: calc(50% - 1.5rem);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-page {
+        padding-top: 40px;
+    }
+
+    .main-page-content {
+        gap: 20px;
+    }
+
+    .photo-border {
+        width: 220px;
+        height: 220px;
+        padding: 6px;
+    }
+
+    .main-page-content .my-photo {
+        width: 208px;
+        height: 208px;
+    }
+
+    .main-text-box {
+        width: 220px;
+        height: 190px;
+        padding: 16px;
+    }
+
+    .main-text h5 {
+        font-size: 12px;
+    }
+
+    .main-text h1 {
+        font-size: 28px;
+    }
+
+    .main-text p {
+        font-size: 13px;
+    }
+
+    .input {
+        font-size: 14px;
+    }
+
+    .resume-social-row {
+        gap: 8px;
+    }
+
+    .btn-resume-div {
+        margin: 15px 0;
+    }
+
+    .btn-resume-div .btn-resume {
+        padding: 7px 16px;
+    }
+
+    .main-text .social i {
+        font-size: 15px;
+    }
+
+    .skills-items {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
