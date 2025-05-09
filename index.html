@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Portfolio Website Design</title>
+    <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
 </head>
+
 <body>
-    <div class="hero-header" id="home">
-        <div class="wrapper">
+    <div class="navbar">
+        <ul class="navlinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>    
+
+    <div class="main-page" id="home">
+        <div class="animation-background">
             <div class="box">
                 <div></div>
                 <div></div>
@@ -28,53 +36,73 @@
                 <div></div>
                 <div></div>
             </div>
-            <header>
-                <nav>
-                    <div class="togglebtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul class="navlinks">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="container">
-                <div class="hero-pic">
-                    <img src="CVPhoto.jpg" alt="profile pic">
-                </div>
-                <div class="hero-text">
-                    <h5>Greetings, I'm</h5>
-                    <h1>Dylan Oelofse</h1>
-                    <p>Welcome to my portfolio! Here, you will find a showcase of my creativity, personal details, and various projects.
-                        I have interests in........<span class="input">Software development</span>
-                    </p>
-                    <div class="btn-group">
-                        <a href="CV_DylanOelofse.pdf" class="btn active" target="_blank">View Resume</a>
-                    </div>
-                    <div class="social">
-                        <a href="https://github.com/dylanOelofse" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/dylanoelofse" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
+        </div>
+        <div class="main-page-content">
+            <div class="photo-border">
+                <div class="my-photo">
+                    <img src="CVPhoto.jpg" alt="My Photo">
                 </div>
             </div>
+            <div class="main-text-box">
+                <div class="main-text">
+                    <h5>Greetings, I'm</h5>
+                    <h1>Dylan Oelofse</h1>
+                    <p>
+                        Welcome to my portfolio! Here, you will find a showcase of my creativity, personal details, and various projects.
+                        I have interests in... <span class="input"></span>
+                    </p>
+                    <div class="resume-social-row">
+                        <div class="btn-resume-div">
+                            <a href="CV_DylanOelofse.pdf" class="btn-resume" target="_blank">View Resume</a>
+                        </div>
+                        <div class="social">
+                            <a href="https://github.com/dylanOelofse" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/dylanoelofse" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </div>
     </div>
     
     <div class="about-me" id="about">
-        <h2>About Me</h2>
-        <p>I am a tech enthusiast with a strong passion for learning and exploring new technologies. My studies in information technology have given me a solid foundation, and I am eager to develop my skills and knowledge further. I have set clear goals for myself and am determined to achieve them, including building a successful career in IT. I enjoy solving problems and taking on new challenges, and I stay updated with the latest tech trends to continuously grow and expand my expertise. I am particularly interested in exploring opportunities in security, software development, and data analytics.</p>
+        <div class="animation-background">
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="blur-layer"></div>
+
+        <h2>ABOUT ME</h2>
+        <p>I am a tech enthusiast with a strong passion for learning and exploring new technologies. My studies in information technology have given me a solid foundation, and I am eager to develop my skills and knowledge further. I have set clear goals for myself and am determined to achieve them, including building a successful career in IT. I enjoy solving problems and taking on new challenges, and I stay updated with the latest tech trends to continuously grow and expand my expertise. I am particularly interested in exploring opportunities in security, software development, data analytics, and databases.</p>
     </div>
 
     <div class="experience" id="experience">
-        <h2>Experience</h2>
+        <div class="animation-background">
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <h2>EXPERIENCE</h2>
         <div class="experience-items">      
             <div class="experience-item">
                 <h3>STOCK CONTROLLER</h3>
@@ -89,7 +117,24 @@
     </div>
 
     <div class="education" id="education">
-        <h2>Education</h2>
+        <div class="animation-background">
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="blur-layer"></div>
+
+        <h2>EDUCATION</h2>
         <div class="education-items">
             <div class="education-item">
                 <h3>Jeppe High School for Boys</h3>
@@ -112,13 +157,40 @@
     </div>
 
     <div class="skills" id="skills">
-        <h2>Skills</h2>
+        <div class="animation-background">
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <h2>SKILLS</h2>
         <div class="skills-items">
+            <div class="skills-item">
+                <span>React</span>
+            </div>
             <div class="skills-item">
                 <span>HTML</span>
             </div>
             <div class="skills-item">
                 <span>CSS</span>
+            </div>
+            <div class="skills-item">
+                <span>Javascript</span>
+            </div>
+            <div class="skills-item">
+                <span>Node</span>
+            </div>
+            <div class="skills-item">
+                <span>Express</span>
             </div>
             <div class="skills-item">
                 <span>Java</span>
@@ -139,13 +211,38 @@
     </div>
 
     <div class="projects" id="projects">
-        <h2>Projects</h2>
+        <div class="animation-background">
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="blur-layer"></div>
+
+        <h2>PROJECTS</h2>
         <div class="project-items">
             <div class="project-item">
                 <a href="https://github.com/dylanOelofse/DylansPortfolio_VirtualCV.git" target="_blank">
-                    <img src="CV_Portfolio.jpg" alt="CV and Portfolio Website">
+                    <img src="CV_Portfolio.jpg" alt="Portfolio Website">
                     <div class="project-overlay">
-                        <div class="project-name">CV and Portfolio Website</div>
+                        <div class="project-name">Portfolio Website</div>
+                    </div>
+                </a>
+            </div>
+            <div class="project-item">
+                <a href="https://github.com/dylanOelofse/Movie_Site.git" target="_blank">
+                    <img src="MovieSite.jpg" alt="Full-Stack Movie Site">
+                    <div class="project-overlay">
+                        <div class="project-name">Full-Stack Movie Site</div>
                     </div>
                 </a>
             </div>
@@ -175,9 +272,9 @@
             </div>
             <div class="project-item">
                 <a href="https://github.com/koekmonster/Full-Stack-Web-App.git" target="_blank">
-                    <img src="FullStack.png" alt="Full-Stack Web App">
+                    <img src="StudyHub.png" alt="Full-Stack Web App">
                     <div class="project-overlay">
-                        <div class="project-name">Full-Stack Web App</div>
+                        <div class="project-name">Full-Stack Study Hub</div>
                     </div>
                 </a>
             </div>
@@ -199,31 +296,49 @@
             </div>
         </div>
     </div>
-    
 
     <div class="contact" id="contact">
-        <h2>Contact Me</h2>
-        <p>Dylan Oelofse</p>
-        <p>Cell: (+27)71 353 6917</p>
-        <p>Email: <a href="mailto:dylanoelofse2003@gmail.com">dylanoelofse2003@gmail.com</a></p>
+        <div class="animation-background">
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <h2>CONTACT ME</h2>
+        <h3>Dylan Oelofse</h3>
+
+        <div class="contact-info-block">
+            <i class="fas fa-phone"></i>
+            <p>Cell: (+27)71 353 6917</p>
+        </div>
+        
+        <div class="contact-info-block">
+            <i class="fas fa-envelope"></i>
+            <p>Email: <a href="mailto:dylanoelofse2003@gmail.com">dylanoelofse2003@gmail.com</a></p>
+        </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> 
+
     <script>
-        var togglebtn = document.querySelector(".togglebtn");
-        var nav = document.querySelector(".navlinks");
+        window.addEventListener("DOMContentLoaded", function() {
+            var typed = new Typed(".input", {
+                strings: ["Software Development", "Cyber Security", "Databases"],
+                typeSpeed: 70,
+                backSpeed: 55,
+                loop: true
+            });
+        });
+    </script> 
 
-        togglebtn.addEventListener("click", function() {
-            this.classList.toggle("click");
-            nav.classList.toggle("open");
-        })
-
-        var typed = new Typed(".input", {
-            strings: ["Software Development", "Cyber Security", "Databases"],
-            typedSpeed: 70,
-            backSpeed: 55,
-            loop: true
-        })
-    </script>
 </body>
 </html>
