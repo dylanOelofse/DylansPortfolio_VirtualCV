@@ -787,10 +787,6 @@ body {
 }
 
 @media (max-width: 900px) {
-    .main-page{
-        padding: 40px 15px;
-    }
-
     .about-me h2 {
         font-size: 2.4rem;
     }
