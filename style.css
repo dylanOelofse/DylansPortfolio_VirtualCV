@@ -60,6 +60,22 @@ body {
     color: #b6f2ff;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: #000;
+    background: #fff;
+    border-radius: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1100;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  }
+  
+
 .animation-background {
     position: absolute;
     top: 0;
@@ -159,6 +175,8 @@ body {
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
+    position: relative;
+    z-index: 11;
 }
 
 .main-page-content {
@@ -936,6 +954,31 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 1100;
+    }
+    
+    .navlinks {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        padding: 20px 0;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .navlinks.show {
+        display: flex;
+    }
+    
     .main-page {
         padding-top: 40px;
     }

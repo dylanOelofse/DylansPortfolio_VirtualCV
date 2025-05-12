@@ -11,16 +11,19 @@
 
 <body>
     <div class="navbar">
-        <ul class="navlinks">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>    
+        <div class="nav-container">
+          <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <ul class="navlinks" id="navlinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+      </div>
 
     <div class="main-page" id="home">
         <div class="animation-background">
@@ -84,7 +87,7 @@
         <div class="blur-layer"></div>
 
         <h2>ABOUT ME</h2>
-        <p>I am a tech enthusiast with a strong passion for learning and exploring new technologies. My studies in information technology have given me a solid foundation, and I am eager to develop my skills and knowledge further. I have set clear goals for myself and am determined to achieve them, including building a successful career in IT. I enjoy solving problems and taking on new challenges, and I stay updated with the latest tech trends to continuously grow and expand my expertise. I am particularly interested in exploring opportunities in security, software development, data analytics, and databases.</p>
+        <p>I am a tech enthusiast with a strong passion for learning and exploring new technologies. My studies in information technology have given me a solid foundation, and I am eager to develop my skills and knowledge further. I enjoy solving problems, taking on new challenges and stay updated with the latest tech trends to continuously grow and expand my expertise. I am particularly interested in exploring opportunities in security, software development, data analytics, and databases.</p>
     </div>
 
     <div class="experience" id="experience">
@@ -337,6 +340,13 @@
                 backSpeed: 55,
                 loop: true
             });
+        });
+
+        const toggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('navlinks');
+
+        toggle.addEventListener('click', () => {
+        nav.classList.toggle('show');
         });
     </script> 
 
