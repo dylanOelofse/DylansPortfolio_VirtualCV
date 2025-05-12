@@ -71,8 +71,8 @@ body {
     height: 40px;
     font-size: 1.5rem;
     color: #e5e5e5;
-    backdrop-filter: blur(11px);
     border-radius: 12px;
+    border: 2px solid #e5e5e5;
     position: absolute;
     top: 9px;
     left: 9px;
@@ -877,8 +877,31 @@ body {
 }
   
 @media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 1100;
+    }
+    
     .navlinks {
-        gap: 5px;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.2); 
+        backdrop-filter: blur(11px);    
+        padding: 20px 0;
+        gap: 20px;
+        text-align: center;
+        z-index: 1000;
+    }
+    
+    .navlinks.show {
+        display: flex;
     }
 
     .navlinks a {
