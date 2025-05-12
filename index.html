@@ -342,9 +342,9 @@
             });
         });
 
-        const toggle = document.getElementById('menu-toggle');
-        const nav = document.getElementById('navlinks');
-        const navLinks = document.querySelectorAll('#navlinks a');
+        const toggle = document.querySelector('.menu-toggle'); 
+        const nav = document.querySelector('.navlinks'); 
+        const navLinks = document.querySelectorAll('.navlinks a');
 
         toggle.addEventListener('click', () => {
             nav.classList.toggle('show');
@@ -352,7 +352,7 @@
 
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
-            nav.classList.remove('show');
+                nav.classList.remove('show');
             });
         });
     </script> 
