@@ -23,8 +23,8 @@ body {
     rgba(10, 80, 150, 0.3) 60%,
     rgba(0, 0, 30, 0.2) 100%
     );
-    overflow-x: hidden;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .navbar {
