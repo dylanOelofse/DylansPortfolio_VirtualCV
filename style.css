@@ -861,6 +861,7 @@ body {
     
     .main-page {
         padding: 40px 15px;
+        height: auto;
     }
 
     .main-page-content {
@@ -950,7 +951,7 @@ body {
 
     .main-text-box {
         width: 220px;
-        height: 220px;
+        height: 212px;
         padding: 16px;
     }
 
@@ -978,12 +979,12 @@ body {
         margin: 15px 0;
     }
 
-    .btn-resume-div .btn-resume {
+    .btn-resume {
         padding: 4.5px 11px;
     }
 
-    .btn-resume a {
-        font-size: 0.6rem;
+    .btn-resume-div a {
+        font-size: 0.8rem;
     }
 
     .main-text .social i {
