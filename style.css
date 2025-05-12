@@ -914,7 +914,7 @@ body {
         opacity: 0;
         overflow: hidden;
         pointer-events: none;
-        transition: max-height 0.9s ease, opacity 0.4s ease;
+        transition: max-height 0.75s ease, opacity 0.4s ease;
         z-index: 1000;
     }
 
