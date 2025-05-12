@@ -39,13 +39,13 @@ body {
     padding: 15px 0;
 }
 
-.navlinks {
+.navlinks-desktop, .navlinks-mobile {
     list-style: none;
     display: flex;
     gap: 30px;
 }
 
-.navlinks a {
+.navlinks-desktop a, .navlinks-mobile a {
     color: #e5e5e5;
     text-decoration: none;
     font-size: 1.2rem;
@@ -55,9 +55,13 @@ body {
     transition: all 0.4s ease;
 }
 
-.navlinks a:hover {
+.navlinks-desktop a:hover, .navlinks-mobile a:hover {
     border-color: #b6f2ff;
     color: #b6f2ff;
+}
+
+.navlinks-mobile {
+    display: none;
 }
 
 .nav-container {
@@ -733,11 +737,11 @@ body {
 }
 
 @media screen and (max-width: 1100px) {
-    .navlinks {
+    .navlinks-desktop {
         gap: 11px;
     }
 
-    .navlinks a {
+    .navlinks-desktop a {
         font-size: 1.1rem;
         padding: 10px 10px;
     }
@@ -877,6 +881,10 @@ body {
 }
   
 @media screen and (max-width: 768px) {
+    .navlinks-desktop {
+        display: none;
+    }
+    
     .menu-toggle {
         display: flex;
         justify-content: center;
@@ -885,7 +893,7 @@ body {
         z-index: 1100;
     }
 
-    .navlinks {
+    .navlinks-mobile {
         position: fixed;
         top: 80px;
         left: 0;
@@ -910,14 +918,14 @@ body {
         z-index: 1000;
     }
 
-    .navlinks.show {
+    .navlinks-mobile.show {
         /* Visible State */
         max-height: 360px;
         opacity: 1;
         pointer-events: auto;
     }
 
-    .navlinks a {
+    .navlinks-mobile a {
         font-size: 0.9rem;
         padding: 10px 15px;
     }
