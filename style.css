@@ -922,14 +922,14 @@ body {
     }
 
     .photo-border {
-        width: 280px;
-        height: 280px;
-        padding: 8px;
+        width: 298px;
+        height: 298px;
+        padding: 9px;
     }
     
     .main-page-content .my-photo {
-        width: 264px;
-        height: 264px;
+        width: 280px;
+        height: 280px;
     }
 
     .main-text-box {
