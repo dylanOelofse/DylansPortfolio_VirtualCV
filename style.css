@@ -67,20 +67,21 @@ body {
 
 .menu-toggle {
     display: none;
-    font-size: 1.8rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
     color: #e5e5e5;
-    background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(11px);
     border-radius: 12px;
-    padding: 8px 12px;
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 9px;
+    left: 9px;
     z-index: 1100;
     cursor: pointer;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-  
 
 .animation-background {
     position: absolute;
@@ -975,10 +976,12 @@ body {
         top: 80px;
         left: 0;
         width: 100%;
-        background: rgba(0, 0, 0, 0.95);
+        background: rgba(0, 0, 0, 0.2); 
+        backdrop-filter: blur(11px);    
         padding: 20px 0;
         gap: 20px;
         text-align: center;
+        z-index: 1000;
     }
     
     .navlinks.show {
