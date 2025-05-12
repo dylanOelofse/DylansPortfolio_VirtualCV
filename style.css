@@ -990,17 +990,6 @@ body {
         gap: 30px;
     }
 
-    .photo-border {
-        width: 220px;
-        height: 220px;
-        padding: 6px;
-    }
-
-    .main-page-content .my-photo {
-        width: 208px;
-        height: 208px;
-    }
-
     .skills-items {
         margin-left: 35px;
         margin-right: 35px;
