@@ -849,7 +849,7 @@ body {
     }
 }
   
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .navlinks {
         gap: 2px;
     }
@@ -861,7 +861,7 @@ body {
     
     .main-page {
         padding: 40px 15px;
-        height: 200px;
+        height: auto;
         background-color: black;
     }
 
@@ -952,7 +952,7 @@ body {
 
     .main-text-box {
         width: 220px;
-        height: 212px;
+        height: 203px;
         padding: 16px;
     }
 
