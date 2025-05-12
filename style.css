@@ -74,8 +74,8 @@ body {
     border-radius: 12px;
     border: 2px solid #e5e5e5;
     position: absolute;
-    top: 9px;
-    left: 9px;
+    top: 18px;
+    left: 15px;
     z-index: 1100;
     cursor: pointer;
     justify-content: center;
@@ -883,8 +883,12 @@ body {
         position: absolute;
         z-index: 1100;
     }
-    
+
     .navlinks {
+        display: none;
+    }
+
+    .navlinks.show {
         position: fixed;
         top: 80px;
         left: 0;
@@ -898,10 +902,8 @@ body {
         padding: 20px 0;
         gap: 32px;
         text-align: center;
-    }
-    
-    .navlinks.show {
-        display: flex;
+        border-top: 2px solid #e5e5e5;
+        box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
     }
 
     .navlinks a {
@@ -914,20 +916,20 @@ body {
     }
 
     .main-page-content {
-        gap: 15px;
+        gap: 40px;
         flex-direction: column;
         padding: 80px 0;
     }
 
     .photo-border {
-        width: 225px;
-        height: 225px;
-        padding: 6px;
+        width: 280px;
+        height: 280px;
+        padding: 8px;
     }
     
     .main-page-content .my-photo {
-        width: 214px;
-        height: 214px;
+        width: 264px;
+        height: 264px;
     }
 
     .main-text-box {
