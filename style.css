@@ -785,6 +785,12 @@ body {
 }
 
 @media (max-width: 900px) {
+    .main-page{
+        height: auto;
+        background-color: black;
+        padding: 40px 15px;
+    }
+
     .about-me h2 {
         font-size: 2.4rem;
     }
@@ -849,9 +855,9 @@ body {
     }
 }
   
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .navlinks {
-        gap: 2px;
+        gap: 5px;
     }
 
     .navlinks a {
@@ -861,8 +867,6 @@ body {
     
     .main-page {
         padding: 40px 15px;
-        height: auto;
-        background-color: black;
     }
 
     .main-page-content {
