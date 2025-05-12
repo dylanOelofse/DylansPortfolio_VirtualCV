@@ -155,16 +155,18 @@ body {
 .main-page {
     width: 100%;
     height: 100vh;
-    position: relative;
-    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
 }
 
 .main-page-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 4rem;
     gap: 220px;
+    padding-bottom: 90px;
 }
 
 .photo-border {
@@ -786,8 +788,6 @@ body {
 
 @media (max-width: 900px) {
     .main-page{
-        height: auto;
-        background-color: black;
         padding: 40px 15px;
     }
 
@@ -872,22 +872,23 @@ body {
     .main-page-content {
         gap: 15px;
         flex-direction: column;
+        padding: 80px 0;
     }
 
     .photo-border {
-        width: 200px;
-        height: 200px;
-        padding: 5px;
+        width: 225px;
+        height: 225px;
+        padding: 6px;
     }
     
     .main-page-content .my-photo {
-        width: 190px;
-        height: 190px;
-    }    
+        width: 214px;
+        height: 214px;
+    }
 
     .main-text-box {
-        width: 200px;
-        height: 190px;
+        width: 220px;
+        height: 200px;
         padding: 16px;
     }
 
@@ -896,15 +897,15 @@ body {
     }
 
     .main-text h1 {
-        font-size: 34px;
+        font-size: 28px;
     }
 
     .main-text p {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .input {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .resume-social-row {
@@ -912,11 +913,15 @@ body {
     }
 
     .btn-resume-div {
-        margin: 18px 0;
+        margin: 15px 0;
     }
 
-    .btn-resume-div .btn-resume {
-        padding: 7px 16px;
+    .btn-resume {
+        padding: 4.5px 11px;
+    }
+
+    .btn-resume-div a {
+        font-size: 0.8rem;
     }
 
     .main-text .social i {
