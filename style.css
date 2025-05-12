@@ -60,11 +60,17 @@ body {
     color: #b6f2ff;
 }
 
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
 .menu-toggle {
     display: none;
     font-size: 1.8rem;
-    color: #000;
-    background: #fff;
+    color: #e5e5e5;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(11px);
     border-radius: 12px;
     padding: 8px 12px;
     position: absolute;
@@ -73,7 +79,7 @@ body {
     z-index: 1100;
     cursor: pointer;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-  }
+}
   
 
 .animation-background {
@@ -980,11 +986,11 @@ body {
     }
     
     .main-page {
-        padding-top: 40px;
+        padding-top: 5px;
     }
 
     .main-page-content {
-        gap: 20px;
+        gap: 28px;
     }
 
     .photo-border {
