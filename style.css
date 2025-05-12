@@ -860,27 +860,27 @@ body {
     }
     
     .main-page {
-        padding-top: 60px;
+        padding: 40px 15px;
     }
 
     .main-page-content {
-        gap: 30px;
+        gap: 15px;
         flex-direction: column;
     }
 
     .photo-border {
-        width: 220px;
-        height: 220px;
-        padding: 6px;
+        width: 200px;
+        height: 200px;
+        padding: 5px;
     }
-
+    
     .main-page-content .my-photo {
-        width: 208px;
-        height: 208px;
-    }
+        width: 190px;
+        height: 190px;
+    }    
 
     .main-text-box {
-        width: 220px;
+        width: 200px;
         height: 190px;
         padding: 16px;
     }
@@ -950,7 +950,7 @@ body {
 
     .main-text-box {
         width: 220px;
-        height: 205px;
+        height: 220px;
         padding: 16px;
     }
 
@@ -979,11 +979,11 @@ body {
     }
 
     .btn-resume-div .btn-resume {
-        padding: 5px 13px;
+        padding: 4.5px 11px;
     }
 
     .btn-resume a {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 
     .main-text .social i {
