@@ -861,7 +861,8 @@ body {
     
     .main-page {
         padding: 40px 15px;
-        height: auto;
+        height: 200px;
+        background-color: black;
     }
 
     .main-page-content {
