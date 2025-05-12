@@ -209,7 +209,7 @@ body {
     padding: 25px;
     border-radius: 25px;
     background: rgba(106, 100, 100, 0.2);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
     transition: transform 0.3s ease;
     z-index: 2;
     display: inline-block;
@@ -306,7 +306,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(4px);
     background: rgba(106, 100, 100, 0.2);
     z-index: 1;
 }
@@ -622,7 +622,7 @@ body {
     margin: 10px auto;
     border-radius: 20px;
     background: rgba(106, 100, 100, 0.2);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
     color: #e5e5e5;
     max-width: 360px;
     transition: transform 0.3s ease;
@@ -869,20 +869,20 @@ body {
     }
 
     .photo-border {
-        width: 280px;
-        height: 280px;
-        padding: 8px;
+        width: 220px;
+        height: 220px;
+        padding: 6px;
     }
 
     .main-page-content .my-photo {
-        width: 264px;
-        height: 264px;
+        width: 208px;
+        height: 208px;
     }
 
     .main-text-box {
-        width: 270px;
-        height: 230px;
-        padding: 20px;
+        width: 220px;
+        height: 190px;
+        padding: 16px;
     }
 
     .main-text h5 {
@@ -906,11 +906,11 @@ body {
     }
 
     .btn-resume-div {
-        margin: 20px 0;
+        margin: 18px 0;
     }
 
     .btn-resume-div .btn-resume {
-        padding: 8px 18px;
+        padding: 7px 16px;
     }
 
     .main-text .social i {
@@ -979,7 +979,11 @@ body {
     }
 
     .btn-resume-div .btn-resume {
-        padding: 7px 16px;
+        padding: 5px 13px;
+    }
+
+    .btn-resume a {
+        font-size: 0.8rem;
     }
 
     .main-text .social i {
