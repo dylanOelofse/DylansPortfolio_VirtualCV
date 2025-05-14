@@ -188,7 +188,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
     position: relative;
     z-index: 11;
     box-sizing: border-box;
@@ -199,7 +198,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 220px;
-    padding-bottom: 90px;
 }
 
 .photo-border {
@@ -213,7 +211,6 @@ body {
     z-index: 2;
     display: inline-block;
 }
-
 
 .main-page-content .my-photo {
     width: 600px;
@@ -828,11 +825,15 @@ body {
         font-size: 1rem;
         padding: 0 30px;
     }    
+
+    .experience {
+        height: auto;
+    }
     
     .experience-item {
         padding: 1.2rem;
         width: 300px;
-        height: 220px;
+        height: auto;
     }
 
     .experience h2 {
@@ -858,7 +859,7 @@ body {
     .education-items {
         gap: 1.2rem;
     }
-    
+
     .education-item {
         padding: 1.2rem;
         width: 300px;
@@ -958,7 +959,7 @@ body {
 
     .main-text-box {
         width: 220px;
-        height: 200px;
+        height: auto;
         padding: 16px;
     }
 
@@ -980,10 +981,15 @@ body {
 
     .resume-social-row {
         gap: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 19px 0;
+        margin-bottom: 10px;
     }
 
     .btn-resume-div {
-        margin: 15px 0;
+        margin: 0;
     }
 
     .btn-resume {
@@ -1012,6 +1018,10 @@ body {
 @media screen and (max-width: 480px) {   
     .main-page-content {
         gap: 30px;
+    }
+
+    .experience-item {
+        height: auto;
     }
 
     .skills-items {
