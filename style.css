@@ -1009,6 +1009,7 @@ body {
     .skills-items {
         margin-left: 60px;
         margin-right: 60px;
+        cursor: pointer;
     }
 
     .project-item {
@@ -1018,6 +1019,10 @@ body {
 
     .project-item.tapped .project-overlay {
         opacity: 1;
+    }
+
+    .project-item.tapped img {
+        transform: scale(1.1);
     }
 }
 

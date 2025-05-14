@@ -371,10 +371,6 @@
             });
         });
 
-
-
-
-        
         document.addEventListener("DOMContentLoaded", function () {
             // Only run on screens <= 768px
             const isSmallScreen = window.matchMedia("(max-width: 768px)").matches;
@@ -387,31 +383,32 @@
                 const link = item.querySelector("a");
 
                 item.addEventListener("touchstart", function (e) {
-                    if (lastTapped !== this) {
-                        e.preventDefault(); // Block navigation
-                        projectItems.forEach(i => i.classList.remove("tapped"));
-                        this.classList.add("tapped");
-                        lastTapped = this;
+                if (lastTapped !== this) {
+                    e.preventDefault();
 
-                        // Optional: auto-remove the overlay after 3 seconds
-                        setTimeout(() => {
-                            this.classList.remove("tapped");
-                            lastTapped = null;
-                        }, 3000);
-                    } else {
-                        // Second tap — allow link to work
-                        lastTapped = null;
+                    // Remove tapped state from others
+                    projectItems.forEach(i => i.classList.remove("tapped"));
+
+                    // Set current as tapped
+                    this.classList.add("tapped");
+                    lastTapped = this;
+
+                    // Optional: auto-remove the overlay after 1.5 seconds
+                    setTimeout(() => {
+                    if (this === lastTapped) {
                         this.classList.remove("tapped");
-                        window.location = link.href;
+                        lastTapped = null;
                     }
+                    }, 1500);
+                } else {
+                    // Second tap - follow the link
+                    lastTapped = null;
+                    this.classList.remove("tapped");
+                    window.location = link.href;
+                }
                 });
             });
         });
     </script> 
-
 </body>
 </html>
-
-
-<!--ok, now all that i need to fix is the navbar list blurr
-heres what i have, the nave bar/list/pop up sits ontop of the main-page...
