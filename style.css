@@ -32,6 +32,7 @@ body {
     height: 80px;
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
     position: fixed;
     top: 0;
     left: 0;
@@ -1013,6 +1014,10 @@ body {
     .project-item {
         flex: 1 1 calc(50% - 1.5rem); 
         max-width: calc(50% - 1.5rem);
+    }
+
+    .project-item.tapped .project-overlay {
+        opacity: 1;
     }
 }
 

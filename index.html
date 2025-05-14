@@ -15,7 +15,7 @@
         <div class="nav-container">
           <div class="menu-toggle" id="menu-toggle">&#9776;</div>
       
-          <!-- Desktop Navigation -->
+            <!-- Desktop Navigation -->
             <ul class="navlinks-desktop">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -368,6 +368,43 @@
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 nav.classList.remove('show');
+            });
+        });
+
+
+
+
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            // Only run on screens <= 768px
+            const isSmallScreen = window.matchMedia("(max-width: 768px)").matches;
+            if (!isSmallScreen) return;
+
+            const projectItems = document.querySelectorAll(".project-item");
+            let lastTapped = null;
+
+            projectItems.forEach(item => {
+                const link = item.querySelector("a");
+
+                item.addEventListener("touchstart", function (e) {
+                    if (lastTapped !== this) {
+                        e.preventDefault(); // Block navigation
+                        projectItems.forEach(i => i.classList.remove("tapped"));
+                        this.classList.add("tapped");
+                        lastTapped = this;
+
+                        // Optional: auto-remove the overlay after 3 seconds
+                        setTimeout(() => {
+                            this.classList.remove("tapped");
+                            lastTapped = null;
+                        }, 3000);
+                    } else {
+                        // Second tap — allow link to work
+                        lastTapped = null;
+                        this.classList.remove("tapped");
+                        window.location = link.href;
+                    }
+                });
             });
         });
     </script> 
