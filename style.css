@@ -928,7 +928,7 @@ body {
 
     .navlinks-mobile.show {
         /* Visible State */
-        max-height: 360px;
+        max-height: 600px;
         opacity: 1;
         pointer-events: auto;
     }
